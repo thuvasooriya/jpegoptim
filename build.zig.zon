@@ -1,0 +1,26 @@
+.{
+    .name = .jpegoptim,
+    .version = "1.5.5",
+    .fingerprint = 0xebf29f239941359f,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .zig_build_helper = .{
+            .url = "git+https://github.com/thuvasooriya/zig-build-helper.git#main",
+            .hash = "zig_build_helper-0.1.0-R4iqbKZ7AACrLlgp90FWp48lKilvLrSEARt3lPv-SpN2",
+        },
+        .upstream = .{
+            .url = "git+https://github.com/tjko/jpegoptim#21d626df1f6a3d98deb937178663562a515fe6a6",
+            .hash = "N-V-__8AABi-BgDvKp-kc9oikFmxJyV1wee5Yvi3zo4QLdUR",
+        },
+        .libjpeg_turbo = .{
+            .url = "git+https://github.com/thuvasooriya/libjpeg-turbo.git#main",
+            .hash = "libjpeg_turbo-3.1.0-csqIDQ97AADTJON3LOBZ9SC7ySuyEnSNu-C7ycNgAF4b",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
